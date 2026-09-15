@@ -4,7 +4,7 @@ import type { AxiosError } from 'axios'
 export const TOKEN_KEY = 'wtp_access_token'
 
 export const apiClient = axios.create({
-  baseURL: '/api/v1',
+  baseURL: (import.meta.env.VITE_API_BASE as string | undefined) ?? '/api/v1',
   headers: { 'Content-Type': 'application/json' },
 })
 
