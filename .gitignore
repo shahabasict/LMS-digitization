@@ -1,0 +1,20 @@
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+.env.local
+*.log
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
